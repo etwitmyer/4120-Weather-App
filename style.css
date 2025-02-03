@@ -1,0 +1,184 @@
+/* General Page Styling */
+body {
+    background-color: #3e4253; /* Dark gray-blue background */
+    font-family: 'Inter', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center; /* puts all containers/widgets centered*/
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Phone Container */
+.phone-container {
+    width: 375px; /* iPhone screen width */
+    background-color: #5b5e70; /* slightly lighter background */
+    padding: 20px;
+    border-radius: 10px; /* rounds the corners */
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+/* Weather Conditions */
+.conditions {
+    background-color: #2d313e;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Weather Widget */
+.weather-widget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #2d313e;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* Bigger Weather Icon */
+.weather-big {
+    width: 200px; /* Increased size */
+    height: auto;
+}
+
+/* Overlayed Temperature Text */
+.temp-value {
+    position: absolute;
+    font-size: 55px; /* Slightly larger text */
+    font-weight: bold;
+    color: white;
+}
+
+/* Outfit Recommendations */
+.outfit-recommendations {
+    background-color: #2d313e;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.outfit-items {
+    display: flex; /*to get horizontla alignment*/
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* Ensures the image and text are centered */
+.outfit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.outfit img {
+    width: 50px;
+    height: 50px;
+}
+
+.outfit p {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.outfit-header p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #b0b3ba;
+    margin: 2px 0 5px;
+}
+
+
+/* Hourly Forecast Section */
+.hourly-forecast {
+    background-color: #2d313e;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+/* Header styling for Hourly Forecast & Feels Like */
+.forecast-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forecast-header p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #b0b3ba;
+    margin: 2px 0 5px;
+}
+
+.feels-like {
+    font-size: 12px;
+    font-weight: normal;
+    color: #b0b3ba;
+    margin: 2px 0 5px;
+}
+
+
+.feels-like-title {
+    text-align: right;
+}
+
+/* Container for each hourly forecast item */
+.forecast-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* Ensuring time, icon, and temperature align properly */
+.forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Larger font for both time and temperature */
+.forecast p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white; /* Ensures text is white */
+    margin: 5px 0;
+}
+
+/* Specifically target the first <p> in each forecast div (the time labels) */
+.forecast p:first-child {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* Standardized Weather Icons */
+.weather-icon {
+    width: 40px; /* Ensures all icons are the same size */
+    height: 40px;
+    object-fit: contain; /* Maintains aspect ratio */
+    margin: 5px 0;
+}
